@@ -7,7 +7,7 @@
     "url": "https://github.com/cjz9032/code-little"
   },
   "version": "1.0.0",
-  "publisher": "cxt",
+  "publisher": "cjz9032",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.0.0"
