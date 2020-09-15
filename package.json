@@ -1,0 +1,63 @@
+{
+  "name": "scss-boost",
+  "displayName": "ScssBoost",
+  "description": "ScssBoost",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cjz9032/code-little"
+  },
+  "version": "1.0.1",
+  "publisher": "cxt",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.scssBoost",
+        "title": "scssBoost"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "ctrl+alt+5",
+        "mac": "ctrl+alt+5",
+        "command": "extension.scssBoost"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "vscode-plugin-scssBoost",
+      "properties": {
+        "vscodePluginScssBoost.identifier": {
+          "type": "string",
+          "default": ": ",
+          "description": "描述与值的分隔符，默认: "
+        }
+      }
+    }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.4",
+    "vscode": "^1.1.25",
+    "eslint": "^4.11.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  },
+  "dependencies": {
+    "clipboardy": "^2.3.0",
+    "jsdom": "^16.4.0"
+  }
+}
